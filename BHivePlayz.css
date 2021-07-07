@@ -1,5 +1,5 @@
 main.css
- * {
+* {
   box-sizing: border-box;
 }
 
@@ -19,13 +19,66 @@ header {
 nav {
   display: flex;
   color: white;
-  flex-direction: row; /* default */
+  flex-direction: row; 
   justify-content: flex-end;
   align-items: center;
   height: 5px;
- 
   
 }
+
+.hidden {
+	display: none;
+}
+.hidden {
+	display: none;
+}
+#modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border: solid 1px #38383d;
+	border-radius: 5px;
+	z-index: 1;
+}
+#modal h2 {
+	font-family: Marker Felt, fantasy;
+	letter-spacing: 2px;
+	margin-top: 5px;
+}
+#modal input {
+	width: 90%;
+	margin: 5px -5px;
+	padding: 8px;
+	border: solid .5px #38383d;
+	border-radius: 4px;
+	border: solid .5px #38383d;
+}
+
+#say-hi-text {
+	height: 75px;
+	resize: none;
+}
+
+#modal button {
+	width: 95%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#submit {
+	background-color: #1E90FF;
+	color: white;
+}
+#submit:hover {
+	background-color: #1E90FF;
+}
+ 
 
 header a {
   color: white;
@@ -53,9 +106,30 @@ p {
   text-align: center;
   font-stretch: extra-expanded;
   letter-spacing: .5px;
+ 
+}
+img {
+  opacity: 0.5;
 }
 
-h2 {
+.robloxprofile {
+	border: solid 3px #fdd68b;
+	height: 30px;
+	width: 30px;
+	margin-left: 10px;
+}
+.robloxprofile:hover {
+	transform: rotate(90deg);
+	transition: transform .4s ease-in-out;
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+  
+}
+
+
+h3 {
   font-size: 15px;
   font-family: Helvetica Neue, Helvetica, sans-serif;
   color: black;
@@ -67,49 +141,58 @@ h2 {
   
 }
 
- main {
+ grid {
   display: grid;
-  margin: 40px auto;
+  text-align: center;
+  margin: 50px auto;
   height: 60vh;
-  max-width: 1000px;
-  display: grid;
+  max-width: 1600px;
   height: 100vh;
+  justify-content: space around;
   font-family: Helvetica Neue, Helvetica, sans-serif;
-  row-gap: 10px;
-  column-gap: 10px;
-  grid-template-columns: 1020fr 1020fr 1fr;
-  grid-template-rows: 100px 100px 100px;
+  flex-direction: column;
+  row-gap: 40px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "roblox" "roblox" "roblox"
-  "animation" "animation" "animation"
-  "scratch" "scratch" "scratch"
+  "roblox animation scratch";
+}
     
  .roblox {
   grid-area: roblox;
-  background-color: #E0FFFF;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-  
-      
+  font-size: 20px;
+  background-color: #FFFAFA;
+  font-family: Marker Felt, fantasy;
+     
       
    } 
    
  .animation {
   grid-area: animation;
-  background-color: #E0FFFF;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #FFFAFA;
+  font-family: Marker Felt, fantasy;
+   
    }
      
   .scratch {
   grid-area: scratch;
-  background-color: #E0FFFF;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #FFFAFA;
+  font-family: Marker Felt, fantasy;
      
      
  }
-   
-  
-   
-   
-   
- 
 
+footer {
+  padding: 30px;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #1E90FF;
+  color: white;
+  font-family: Marker Felt, fantasy;
+  text-align: center;
+   
+}
+  
+  
