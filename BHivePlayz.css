@@ -1,0 +1,115 @@
+main.css
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+header {
+  background-color: #1E90FF;
+  color: white;
+  font-family: Marker Felt, fantasy;
+  padding: 15px;
+  
+}
+
+nav {
+  display: flex;
+  color: white;
+  flex-direction: row; /* default */
+  justify-content: flex-end;
+  align-items: center;
+  height: 5px;
+ 
+  
+}
+
+header a {
+  color: white;
+  margin: 10px;
+  
+}
+
+header {
+  background-color: #1E90FF;
+  color: white;
+  font-family: Marker Felt, fantasy;
+  padding: 10px;
+  
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  color: black;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  font-stretch: extra-expanded;
+  letter-spacing: .5px;
+}
+
+h2 {
+  font-size: 15px;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  font-stretch: extra-expanded;
+  letter-spacing: .5px;
+   
+  
+}
+
+ main {
+  display: grid;
+  margin: 40px auto;
+  height: 60vh;
+  max-width: 1000px;
+  display: grid;
+  height: 100vh;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 1020fr 1020fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas:
+  "roblox" "roblox" "roblox"
+  "animation" "animation" "animation"
+  "scratch" "scratch" "scratch"
+    
+ .roblox {
+  grid-area: roblox;
+  background-color: #E0FFFF;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  
+      
+      
+   } 
+   
+ .animation {
+  grid-area: animation;
+  background-color: #E0FFFF;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+   }
+     
+  .scratch {
+  grid-area: scratch;
+  background-color: #E0FFFF;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+     
+     
+ }
+   
+  
+   
+   
+   
+ 
+
